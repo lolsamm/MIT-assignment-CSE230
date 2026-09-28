@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samip Lamichhane | Portfolio</title>
+</head>
+
+<body>
+
+    <!-- header = top area of page -->
+    <header>
+        <h1>Samip Lamichhane</h1>
+
+        <!-- nav = navigation area -->
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main = main content of page -->
+    <main>
+
+        <!-- section = one part of the page -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src='image/my img.jpg'
+                 alt="Samip Lamichhane profile photo"
+                 width="200"
+                 height="200">
+            <p>
+                I am a student at International American University.
+                I am learning <strong>Web Design and Development</strong>.
+                I like building websites and <em>must</em> finish my portfolio.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <!-- dl = description list, dt = term, dd = description -->
+            <dl>
+                <dt>HTML5</dt>
+                <dd>Semantic structure and accessibility</dd>
+
+                <dt>CSS3</dt>
+                <dd>Layout, color, and responsive design</dd>
+
+                <dt>JavaScript</dt>
+            </dl>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- article = one independent project -->
+            <article>
+                <h3>Personal Portfolio</h3>
+                <p>A single-page portfolio built with semantic HTML5.</p>
+                <p>
+                    <a href="https://github.com/samip/portfolio"
+                       target="_blank"
+                       rel="noopener">View Repository</a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Image Slider</h3>
+                <p>A JavaScript image slider with smooth transitions.</p>
+                <p>
+                    <a href="https://github.com/samip/image-slider"
+                       target="_blank"
+                       rel="noopener">View Repository</a>
+                </p>
+            </article>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="/submit" method="post">
+
+                <!-- label for = id of input, they must match -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <br>
+
+                <button type="submit">Send</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- footer = bottom area of page -->
+    <footer>
+        <p>&copy; 2026 Samip Lamichhane</p>
+    <a href="https://github.com/lolsamm">github</a>
+    </footer>
+
+</body>
+
+</html>
